@@ -36,11 +36,19 @@
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
 </head>
-
+<style>
+  section {
+    padding: 81px 0;
+    overflow: hidden;
+}
+.bi-files:hover{
+   
+}
+</style>
 <body>
 
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top ">
+  <header id="header" style="background-color: #743f77;" class="fixed-top ">
     <div class="container d-flex align-items-center">
 
       <h1 class="logo me-auto"><a href="index.html">
@@ -51,8 +59,8 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto " href="index.html">Home</a></li>
+          <li><a class="nav-link scrollto" href="index.html">About</a></li>
           <li class="d-none"> <a class="nav-link scrollto " href="#services">Services</a></li>
           <li class="d-none"><a class="nav-link   scrollto"  href="#portfolio">Portfolio</a></li>
           <li class="d-none"><a class="nav-link scrollto" href="#team">Team</a></li>
@@ -89,8 +97,8 @@
               <li class="d-none"><a href="#">Drop Down 4</a></li>
             </ul>
           </li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-          <li class="d-none"><a class="getstarted scrollto" href="#about">Get Started</a></li>
+          <li><a class="nav-link scrollto active" href="/contact.html">Contact</a></li>
+          <li  class="d-none"><a class="getstarted scrollto" href="#about">Get Started</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -103,26 +111,49 @@
 
     <div class="container">
       <div class="row">
-        <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
-          <h1>Truly partner-centric company.</h1>
-          <h2>Be the extended hand of the manufacturer serving wisely to each and every customer.</h2>
-          <div class="d-flex justify-content-center justify-content-lg-start">
-            <a href="#about" class="btn-get-started scrollto">Get Started</a>
-            <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox btn-watch-video d-none"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
           </div>
-        </div>
-        <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
-          <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="assets/img/secure.jpeg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/img/picture.jpeg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/img/click.jpeg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/img/men.png" class="d-block w-100" alt="...">
+            </div> 
+            <div class="carousel-item">
+              <img src="assets/img/Axis.jpeg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
       </div>
     </div>
 
   </section><!-- End Hero -->
 
-  <main id="main">
+  <main id="main" class="mt-5"> 
 
     <!-- ======= Clients Section ======= -->
-    <section id="clients" class="d-none clients section-bg">
+    <section id="clients" class="d-none clients section-bg  d-none">
       <div class="container">
 
         <div class="row" data-aos="zoom-in">
@@ -157,7 +188,7 @@
     </section><!-- End Cliens Section -->
 
     <!-- ======= About Us Section ======= -->
-    <section id="about" class="about">
+    <section id="about" class="about  d-none">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
@@ -188,7 +219,7 @@
     </section><!-- End About Us Section -->
 
     <!-- ======= Why Us Section ======= -->
-    <section id="why-us" class="why-us section-bg">
+    <section id="why-us" class="why-us section-bg  d-none">
       <div class="container-fluid" data-aos="fade-up">
 
         <div class="row">
@@ -302,7 +333,7 @@
     </section><!-- End Skills Section -->
 
     <!-- ======= Services Section ======= -->
-    <section id="services" class="services ">
+    <section id="services" class="services  d-none ">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
@@ -711,16 +742,16 @@
                 <p></p>
               </div>
 
-              <div class="email">
+              <div class="email" onclick="copy('info@example.com','mail1')">
                 <i class="bi bi-envelope"></i>
                 <h4>Email:</h4>
-                <p>info@example.com</p>
+                <p class="num" id="mail1">info@example.com</p>
               </div>
 
-              <div class="phone">
+              <div class="phone" onclick="copy('+1 5589 55488 55','phone1')">
                 <i class="bi bi-phone"></i>
                 <h4>Call:</h4>
-                <p>+1 5589 55488 55s</p>
+                <p class="num" id="phone1">+1 5589 55488 55s</p>
               </div>
 
             </div>
@@ -741,16 +772,16 @@
                 <p></p>
               </div>
 
-              <div class="email">
+              <div class="email" onclick="copy('support@franklinone.com','mail2')">
                 <i class="bi bi-envelope"></i>
                 <h4>Email:</h4>
-                <p>support@franklinone.com </p>
+                <p class="num" id="mail2">support@franklinone.com </p>
               </div>
 
-              <div class="phone">
+              <div class="phone" onclick="copy('+1 5589 55488 55','phone2')">
                 <i class="bi bi-phone"></i>
                 <h4>Call:</h4>
-                <p>+1 5589 55488 55s</p>
+                <p class="num" id="phone2">+1 5589 55488 55s</p>
               </div>
 
             </div>
@@ -771,20 +802,17 @@
                 <p></p>
               </div>
 
-              <div class="email">
+              <div class="email" onclick="copy('support@franklinone.com','mail3')">
                 <i class="bi bi-envelope"></i>
                 <h4>Email:</h4>
-                <p>support@franklinone.com </p>
+                <p class="num" id="mail3"> support@franklinone.com </p>
               </div>
-
-              <div class="phone">
+              <div class="phone" onclick="copy('+1 5589 55488 55','phone3')">
                 <i class="bi bi-phone"></i>
-                <h4>Call:</h4>
-                <p><a href="tel: 09566128857">09566128857</a></p>
+                <h4>Call: </h4>
+                <p class="num" id="phone3">09566128857</p>
               </div>
-
             </div>
-
           </div>
           <div class="col-lg-3 d-flex align-items-stretch">
             <div class="info">
@@ -801,16 +829,17 @@
                 <p></p>
               </div>
 
-              <div class="email">
+              <div class="email" onclick="copy('support@franklinone.com','mail4')">
                 <i class="bi bi-envelope"></i>
                 <h4>Email:</h4>
-                <p>support@franklinone.com </p>
+                <p class="num" id="mail4">support@franklinone.com </p>
+                
               </div>
 
-              <div class="phone">
+              <div class="phone" onclick="copy('+1 5589 55488 55','phone4')">
                 <i class="bi bi-phone"></i>
                 <h4>Call:</h4>
-                <p>+1 5589 55488 55s</p>
+                <p class="num" id="phone4">09566128857</p>
               </div>
 
             </div>
@@ -908,7 +937,9 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+<script>
 
+</script>
 </body>
 
 </html>

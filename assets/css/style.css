@@ -1406,7 +1406,7 @@ section {
 .contact .info {
   border-top: 3px solid #47b2e4;
   border-bottom: 3px solid #47b2e4;
-  padding: 30px;
+  padding: 21px;
   background: #fff;
   width: 100%;
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.1);
@@ -1822,4 +1822,25 @@ section {
   #footer .credits {
     padding-top: 4px;
   }
+}
+.num::after {
+  font-family: bootstrap-icons !important;
+  content: "\f3c2";
+  margin-left: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  position: absolute;
+}
+.number::after {
+  font-family: bootstrap-icons !important;
+  content: "copied";
+  margin-left: 8px;
+  font-size: 13px;
+  border: 1px solid #65aed0;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 8px;
+  background-color: #46b2e44a;
+  padding-bottom: 9px;
+  font-weight: 900;
 }

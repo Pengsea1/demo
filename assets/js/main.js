@@ -259,3 +259,9 @@
 $('.carousel').carousel({
   interval: 800
 })
+ 
+function copy(phone, id){
+  navigator.clipboard.writeText(phone);
+  document.getElementById(id).classList.remove("num");
+  document.getElementById(id).classList.add("number");
+}
