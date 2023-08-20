@@ -1843,4 +1843,9 @@ section {
   background-color: #46b2e44a;
   padding-bottom: 9px;
   font-weight: 900;
+}  
+@media (max-width: 590px) {
+  .image-display{
+    display: none;
+  }
 }
