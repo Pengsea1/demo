@@ -27,7 +27,6 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-  <script src="./assets/js/lottie-player.js"></script>
 
   <!-- =======================================================
   * Template Name: Arsha
@@ -38,12 +37,17 @@
   ======================================================== -->
 </head>
 <style>
-  #lottie-controls{
-    display: none;
+  section {
+    padding: 81px 0;
+    overflow: hidden;
+}
+  .bi-files:hover{
+    
   }
-  .toolbar{
-    display: none !important;
-
+  @media (max-width: 490px) {
+    .image-display{
+      display: none;
+    }
   }
 </style>
 <body>
@@ -60,33 +64,33 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
-          <li><a class="nav-link scrollto" href="about.html">About</a></li>
+          <li><a class="nav-link scrollto " href="index.html">Home</a></li>
+          <li><a class="nav-link scrollto active" href="about.html">About</a></li>
           <li class="d-none"> <a class="nav-link scrollto " href="#services">Services</a></li>
           <li class="d-none"><a class="nav-link   scrollto"  href="#portfolio">Portfolio</a></li>
           <li class="d-none"><a class="nav-link scrollto" href="#team">Team</a></li>
           <li class="dropdown"><a href="#"><span>Our Solution</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li class="d-none"><a href="/contact.html">Networking and Security</a></li>
+              <li class="d-none"><a href="#contact">Networking and Security</a></li>
               <li class="dropdown"><a href="#"><span>Networking and Security</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
-                  <li><a href="/contact.html">Endpoint Detection/Protection</a></li>
-                  <li><a href="/contact.html">WAAF</a></li>
-                  <li><a href="/contact.html">BOT Protection</a></li>
-                  <li><a href="/contact.html">DDOS</a></li>
-                  <li><a href="/contact.html">CDN </a></li>
+                  <li><a href="#contact">Endpoint Detection/Protection</a></li>
+                  <li><a href="#contact">WAAF</a></li>
+                  <li><a href="#contact">BOT Protection</a></li>
+                  <li><a href="#contact">DDOS</a></li>
+                  <li><a href="#contact">CDN </a></li>
                 </ul>
               </li>
-              <li><a href="/contact.html">Video Management System</a></li>
+              <li><a href="#contact">Video Management System</a></li>
               <li class="dropdown"><a href="#"><span>System</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
-                  <li><a href="/contact.html">DAS</a></li>
-                  <li class="dropdown"><a href="/contact.html">HDD	</a>
+                  <li><a href="#contact">DAS</a></li>
+                  <li class="dropdown"><a href="#contact">HDD	</a>
                     <ul>
                       <li>                
                         <p>Email: support@franklinone.com </p>
                       </li>
-                      <li class="dropdown"><a href="/contact.html">Phone: +855 *********	</a>
+                      <li class="dropdown"><a href="#contact">Phone: +855 *********	</a>
                       
                       </li>
                       
@@ -98,7 +102,7 @@
               <li class="d-none"><a href="#">Drop Down 4</a></li>
             </ul>
           </li>
-          <li><a class="nav-link scrollto" href="/contact.html">Contact</a></li>
+          <li><a class="nav-link scrollto " href="/contact.html">Contact</a></li>
           <li  class="d-none"><a class="getstarted scrollto" href="#about">Get Started</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -108,7 +112,7 @@
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex align-items-center">
+  <section id="hero" class="d-flex align-items-center d-none">
 
     <div class="container">
       <div class="row">
@@ -151,10 +155,10 @@
 
   </section><!-- End Hero -->
 
-  <main id="main">
+  <main id="main" class="mt-5"> 
 
     <!-- ======= Clients Section ======= -->
-    <section id="clients" class="d-none clients section-bg">
+    <section id="clients" class="d-none clients section-bg  d-none">
       <div class="container">
 
         <div class="row" data-aos="zoom-in">
@@ -182,7 +186,9 @@
           <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
             <img src="assets/img/clients/client-6.png" class="img-fluid" alt="">
           </div>
+
         </div>
+
       </div>
     </section><!-- End Cliens Section -->
 
@@ -199,6 +205,7 @@
             <p>
               The company is established with full of extensive experiences individuals who accomplished professionally in distribution business for years understanding the core values of being a true distributor. 
             </p>
+            
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0">
             <p>
@@ -215,12 +222,9 @@
 
       </div>
     </section><!-- End About Us Section -->
-    
+
     <!-- ======= Why Us Section ======= -->
     <section id="why-us" style="background-color: #ffffff;" class="why-us section-bg  ">
-      <div class="section-title">
-        <h2>About Us</h2>
-      </div>
       <div class="container-fluid" data-aos="fade-up">
 
         <div class="row">
@@ -237,6 +241,7 @@
               <h3> Core <strong>Values</strong></h3>
               <h5>
                 The company is established with full of extensive experiences individuals who accomplished professionally in distribution business for years understanding the core values of being a true distributor.
+
               </h5>
             </div>
             <div class="content">
@@ -278,177 +283,7 @@
 
           </div>
 
-          <!-- <div class="col-lg-5 align-items-stretch order-0 order-lg-2 img col-0 image-display" style='background-image: url("assets/img/why-us.png");' data-aos="zoom-in" data-aos-delay="150">&nbsp;</div> -->
-          <div class="col-lg-5 align-items-stretch order-0 order-lg-2 img col-0 image-display"  data-aos="zoom-in" data-aos-delay="150">
-            <lottie-player src="/assets/js/animation.json" background="transparent"  speed="1"  style="width: 600px; height: 600px;" loop autoplay>
-          </lottie-player>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End Why Us Section -->
-
-    <section id="hero" style="height: 349px;background-color: #743f77;" class="d-flex align-items-center">
-
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
-            <h1>Our Vision</h1>
-            <h2> 
-
-              Truly partner-centric company.
-              </h2>
-            <div class="d-flex justify-content-center justify-content-lg-start">
-              <a  class="d-none" href="#about" class="btn-get-started scrollto">Get Started</a>
-              <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox btn-watch-video d-none"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
-            </div>
-          </div>
-          <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
-            <lottie-player src="/assets/js/animation2.json" background="transparent"  speed="1"  style="width: 400px; height: 400px;" loop autoplay>
-            </div>
-        </div>
-      </div>
-    </section><!-- End Hero -->
-
-    <section id="hero" style="height: 349px;background-color: #743f77;" class="d-flex align-items-center">
-
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 order-1 order-lg-1 hero-img" data-aos="zoom-in" data-aos-delay="200">
-            <lottie-player src="/assets/js/animation3.json" background="transparent"  speed="1"  style="width: 400px; height: 400px;" loop autoplay>
-            </div>
-          <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-2" data-aos="fade-up" data-aos-delay="200">
-            <h1>Our Mission</h1>
-            <h2>Be the extended hand of the manufacturer serving wisely to each and every customer.</h2>
-            <div class="d-flex justify-content-center justify-content-lg-start">
-              <a  class="d-none" href="#about" class="btn-get-started scrollto">Get Started</a>
-              <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox btn-watch-video d-none"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
-            </div>
-          </div>
-
-        </div>
-      </div>
-  
-    </section><!-- End Hero -->
-  
-    <!-- ======= Why Us Section ======= -->
-    <section id="why-us" class="why-us section-bg d-none">
-      <div class="container-fluid" data-aos="fade-up">
-
-        <div class="row">
-
-          <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
-
-            <div class="content">
-              <h3> OUR <strong>Vision</strong></h3>
-              <p>
-                Truly partner-centric company.
-              </p>
-            </div>
-            <div class="content">
-              <h3> OUR <strong>Mission</strong></h3>
-              <p>
-                Be the extended hand of the manufacturer serving wisely to each and every customer.
-              </p>
-            </div>
-
-            <div class="accordion-list d-none">
-              <ul>
-                <li>
-                  <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-1"><span>01</span> Non consectetur a erat nam at lectus urna duis? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                  <div id="accordion-list-1" class="collapse show" data-bs-parent=".accordion-list">
-                    <p>
-                      Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
-                    </p>
-                  </div>
-                </li>
-
-                <li>
-                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-2" class="collapsed"><span>02</span> Feugiat scelerisque varius morbi enim nunc? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                  <div id="accordion-list-2" class="collapse" data-bs-parent=".accordion-list">
-                    <p>
-                      Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
-                    </p>
-                  </div>
-                </li>
-
-                <li>
-                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-3" class="collapsed"><span>03</span> Dolor sit amet consectetur adipiscing elit? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                  <div id="accordion-list-3" class="collapse" data-bs-parent=".accordion-list">
-                    <p>
-                      Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
-                    </p>
-                  </div>
-                </li>
-
-              </ul>
-            </div>
-
-          </div>
-
-          <div class="col-lg-5 align-items-stretch order-1 order-lg-2 img"  data-aos="zoom-in" data-aos-delay="150">
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End Why Us Section -->
-
-    <!-- ======= Why Us Section ======= -->
-    <section id="why-us" class="why-us section-bg d-none">
-      <div class="container-fluid" data-aos="fade-up">
-
-        <div class="row">
-
-          <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
-
-            <div class="content">
-              <h3> OUR <strong>Vision</strong></h3>
-              <p>
-                Truly partner-centric company.
-              </p>
-            </div>
-            <!-- <div class="content">
-              <h3> OUR <strong>Mission</strong></h3>
-              <p>
-                Be the extended hand of the manufacturer serving wisely to each and every customer.
-              </p>
-            </div> -->
-
-            <div class="accordion-list d-none">
-              <ul>
-                <li>
-                  <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-1"><span>01</span> Non consectetur a erat nam at lectus urna duis? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                  <div id="accordion-list-1" class="collapse show" data-bs-parent=".accordion-list">
-                    <p>
-                      Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
-                    </p>
-                  </div>
-                </li>
-
-                <li>
-                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-2" class="collapsed"><span>02</span> Feugiat scelerisque varius morbi enim nunc? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                  <div id="accordion-list-2" class="collapse" data-bs-parent=".accordion-list">
-                    <p>
-                      Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
-                    </p>
-                  </div>
-                </li>
-
-                <li>
-                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-3" class="collapsed"><span>03</span> Dolor sit amet consectetur adipiscing elit? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                  <div id="accordion-list-3" class="collapse" data-bs-parent=".accordion-list">
-                    <p>
-                      Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
-                    </p>
-                  </div>
-                </li>
-
-              </ul>
-            </div>
-
-          </div>
-
-          <div class="col-lg-5 align-items-stretch order-1 order-lg-2 img" style='background-image: url("assets/img/why-us.png");' data-aos="zoom-in" data-aos-delay="150">&nbsp;</div>
+          <div class="col-lg-5 align-items-stretch order-0 order-lg-2 img col-0 image-display" style='background-image: url("assets/img/why-us.png");' data-aos="zoom-in" data-aos-delay="150">&nbsp;</div>
         </div>
 
       </div>
@@ -508,12 +343,12 @@
     </section><!-- End Skills Section -->
 
     <!-- ======= Services Section ======= -->
-    <section id="services" class="services d-none">
+    <section id="services" class="services  d-none ">
       <div class="container" data-aos="fade-up">
 
-        <div class="section-title">
-          <h2>Our Services</h2>
-          <p>We are proud to offer a wide range of services that cater to your needs. Our team is dedicated to providing you with the best customer service experience possible. We believe that our customers are our top priority and we strive to make sure that you are satisfied with our services. Please feel free to browse our website and let us know if you have any questions or concerns.</p>
+        <div class="section-title1">
+           
+          <h6>We are proud to offer a wide range of services that cater to your needs. Our team is dedicated to providing you with the best customer service experience possible. We believe that our customers are our top priority and we strive to make sure that you are satisfied with our services. Please feel free to browse our website and let us know if you have any questions or concerns.</h6>
         </div>
 
         <div class="row">
@@ -917,16 +752,16 @@
                 <p></p>
               </div>
 
-              <div class="email">
+              <div class="email" onclick="copy('info@example.com','mail1')">
                 <i class="bi bi-envelope"></i>
                 <h4>Email:</h4>
-                <p>info@example.com</p>
+                <p class="num" id="mail1">info@example.com</p>
               </div>
 
-              <div class="phone">
+              <div class="phone" onclick="copy('+1 5589 55488 55','phone1')">
                 <i class="bi bi-phone"></i>
                 <h4>Call:</h4>
-                <p>+1 5589 55488 55s</p>
+                <p class="num" id="phone1">+1 5589 55488 55s</p>
               </div>
 
             </div>
@@ -947,16 +782,16 @@
                 <p></p>
               </div>
 
-              <div class="email">
+              <div class="email" onclick="copy('support@franklinone.com','mail2')">
                 <i class="bi bi-envelope"></i>
                 <h4>Email:</h4>
-                <p>support@franklinone.com </p>
+                <p class="num" id="mail2">support@franklinone.com </p>
               </div>
 
-              <div class="phone">
+              <div class="phone" onclick="copy('+1 5589 55488 55','phone2')">
                 <i class="bi bi-phone"></i>
                 <h4>Call:</h4>
-                <p>+1 5589 55488 55s</p>
+                <p class="num" id="phone2">+1 5589 55488 55s</p>
               </div>
 
             </div>
@@ -977,20 +812,17 @@
                 <p></p>
               </div>
 
-              <div class="email">
+              <div class="email" onclick="copy('support@franklinone.com','mail3')">
                 <i class="bi bi-envelope"></i>
                 <h4>Email:</h4>
-                <p>support@franklinone.com </p>
+                <p class="num" id="mail3"> support@franklinone.com </p>
               </div>
-
-              <div class="phone">
+              <div class="phone" onclick="copy('+1 5589 55488 55','phone3')">
                 <i class="bi bi-phone"></i>
-                <h4>Call:</h4>
-                <p><a href="tel: 09566128857">09566128857</a></p>
+                <h4>Call: </h4>
+                <p class="num" id="phone3">09566128857</p>
               </div>
-
             </div>
-
           </div>
           <div class="col-lg-3 d-flex align-items-stretch">
             <div class="info">
@@ -1007,16 +839,17 @@
                 <p></p>
               </div>
 
-              <div class="email">
+              <div class="email" onclick="copy('support@franklinone.com','mail4')">
                 <i class="bi bi-envelope"></i>
                 <h4>Email:</h4>
-                <p>support@franklinone.com </p>
+                <p class="num" id="mail4">support@franklinone.com </p>
+                
               </div>
 
-              <div class="phone">
+              <div class="phone" onclick="copy('+1 5589 55488 55','phone4')">
                 <i class="bi bi-phone"></i>
                 <h4>Call:</h4>
-                <p>+1 5589 55488 55s</p>
+                <p class="num" id="phone4">09566128857</p>
               </div>
 
             </div>
